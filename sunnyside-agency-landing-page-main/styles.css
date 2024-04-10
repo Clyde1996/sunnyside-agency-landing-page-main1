@@ -1,0 +1,357 @@
+
+*{
+    font-family: 'calibri', 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  /******************************/
+  /********* Header ***********/
+  /******************************/
+
+
+header {
+    background: no-repeat fixed 100% 100% url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg"); 
+    padding-top: 60px;
+    color: #fff;
+    background-size: cover;
+    height: 799px;
+    /* text-align: center; */
+}
+
+
+header .top-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 10px; */
+}
+
+.top-nav h2{
+    font-size: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 777px;
+}
+
+header nav ul li{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: white;
+    display: inline-block;
+    padding: 10px 20px; /* Ajustez le rembourrage selon vos besoins */
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid transparent; /* Ajoutez une bordure transparente */
+    border-radius: 30px; /* Utilisez un rayon de bordure pour obtenir la forme arrondie */
+    transition: all 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+}
+
+header nav ul li a:hover {
+    background: white; /* Changement de couleur de fond au survol */
+    color: black; /* Changement de couleur du texte au survol */
+}
+
+header h2{
+    font-weight: bold   ;
+}
+
+.arrow{
+    position: relative;
+    left: 49%;
+    top: 1%;
+}
+
+/******************************/
+#about h1{
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+
+#services .services-transform {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-transform .text1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.text1 h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: bold;
+    padding-bottom: 25px;
+}
+
+.text1 b a{
+    text-decoration: none;
+    color: black;
+}
+
+.text1 b a p{
+    font-weight: bolder;
+    padding-top: 20px;
+    text-transform: uppercase; 
+}
+
+.services-transform img {
+    flex-basis: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#services .services-stand{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+}
+
+.services-stand .text2{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.text2 h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: bold;
+    padding-bottom: 25px;
+}
+
+.text2 b a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.text2 b a p{
+    font-weight: bolder;
+    padding-top: 20px;
+    text-transform: uppercase; 
+}
+
+.services-stand img{
+    flex-basis: 50%; /* ca prendre le motie de la page*/
+    max-width: 100%;
+    height: auto;
+}
+
+/*************************/
+
+.gd-ph {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.services-graphic {
+    flex: 1;
+    position: relative;
+    background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+    background-size: cover; /*  pour remplir la div */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-graphic .text3 {
+    position: absolute;
+    columns: #4F9585;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 150px;
+}
+
+.services-graphic .text3 h3, .text3 p{
+    color: hsl(167,42%,24%);
+}
+
+.services-graphic .text3 h3{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0 0 20px 0;
+}
+
+
+.services-photography {
+    flex: 1;
+    position: relative;
+    background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; /*  pour remplir la div */
+}
+
+.services-photography .text4 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 150px;
+}
+
+
+.text4 h3, .text4 p{
+    color: hsl(197,61%,26%);
+}
+
+.text4 h3{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0 0 20px 0;
+}
+
+
+
+
+/************************************************/
+/************   projects       *******************/
+/************************************************/
+
+
+.project-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#projects h2{
+    text-align: center;
+    padding: 160px 0 0 0;
+    color: #b5b2b0;
+    font-family: serif;
+    letter-spacing: 5px;
+}
+
+
+.project-text img{
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 50% ;
+    padding: 20px;
+}
+
+.projects-director, .projects-chief, .projects-owner{
+    padding: 90px;
+}
+
+#projects h3 {
+    padding: 30px 0 10px 0;
+}
+
+/************************************************/
+/************   footer       *******************/
+/************************************************/
+
+.footer-img {
+    font-size: 0; /* Pour supprimer les espaces blancs entre les éléments inline-block */
+}
+
+.footer-img img{
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top; /* Pour aligner les images sur le haut de la ligne */
+    box-sizing: border-box; /* Inclure les bordures dans la taille de l'image */
+    border: none; /* Supprimer les bordures */
+    margin: 0; /* Supprimer les marges */
+    padding: 0; /* Supprimer les rembourrages */
+}
+
+footer{
+    background-color: #A1DECF;
+}
+
+footer h2{
+  color: #2C7566 ;  
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+
+.footer-nav{
+    padding: 30px;
+}
+
+.footer-nav nav ul {
+    padding: 0; /* Supprimez le rembourrage par défaut */
+    text-align: center; /* Centrez les éléments de la liste */
+}
+
+.footer-nav nav ul li {
+    display: inline-block; /* Affichez les éléments de la liste en ligne */
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.footer-nav nav ul li a{
+    color: rgb(44, 117, 102);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.footer-nav nav ul li a:hover{
+    color: white;
+}
+
+.footer-icones{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-icones svg{
+    margin: 10px;
+}
+
+.footer-icones a{
+    text-decoration: none;  
+}
+
+.footer-icones a:hover svg path {
+    fill: white; /* Change la couleur des icônes en vert lorsqu'elles sont survolées */
+}
