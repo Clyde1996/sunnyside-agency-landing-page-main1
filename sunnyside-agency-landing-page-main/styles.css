@@ -16,9 +16,8 @@ header {
     background: no-repeat fixed 100% 100% url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg"); 
     padding-top: 60px;
     color: #fff;
-    background-size: cover;
     height: 799px;
-    /* text-align: center; */
+    background-size: cover;
 }
 
 
@@ -167,7 +166,8 @@ header h2{
 .gd-ph {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .services-graphic {
@@ -193,6 +193,7 @@ header h2{
     width: 100%;
     padding: 150px;
 }
+
 
 .services-graphic .text3 h3, .text3 p{
     color: hsl(167,42%,24%);
@@ -240,6 +241,10 @@ header h2{
     padding: 0 0 20px 0;
 }
 
+
+/* #menu-open {
+    display: none;
+} */
 
 
 
@@ -354,4 +359,178 @@ footer h2{
 
 .footer-icones a:hover svg path {
     fill: white; /* Change la couleur des icônes en vert lorsqu'elles sont survolées */
+}
+
+
+.menu-toggle {
+    display: none; /* Masquer le bouton de menu par défaut */
+}
+
+
+#menu-close{
+    display: none;
+    color: grey;
+}
+
+/************************************************/
+/************   mobile mode       *******************/
+/************************************************/
+@media only screen and (max-width: 1000px){
+    
+
+    header {
+        background-position: bottom center; /* Réaligner l'image d'arrière-plan */
+        position: relative;
+        background-size: cover; 
+       
+    }
+
+    .top-nav h2 {
+        position: absolute; /* Positionnez-le en absolu */
+        top: 8px; /* Alignez-le en haut du header */
+        left: 20%; /* Placez-le au centre horizontalement */
+        transform: translateX(-50%); /* Centrez-le correctement */
+    }
+ 
+
+    .menu-toggle {
+        display: block; /* Afficher le bouton de menu */
+        cursor: pointer;
+        position: absolute;
+        top: -25%; /* Ajustez la position verticale */
+        right: 0px; /* Ajustez la position horizontale */
+        /* position: relative; */
+    }
+
+    
+    
+    /* header .top-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center
+    } */
+    
+    #burgermenu {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        text-align: center; /* Centrer le texte */
+        padding: 20px 0; /* Ajouter de l'espace autour des éléments */
+        position: relative; 
+        background: white;
+        
+    }
+
+    #burgermenu a{
+        color: grey;
+    }
+
+
+    #menu-open{
+        position: absolute;
+        top: 17px; 
+        right: 20px;
+    }
+
+    
+    
+    header nav ul li {
+        padding: 10px 20px; /* Ajouter de l'espace entre les éléments de la liste */
+    }
+
+  
+
+    #menu-close {
+        display: block; /* ou inline-block */
+    }
+
+    
+
+
+   
+ 
+    /* Services */
+    #services .services-transform,
+    #services .services-stand {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        text-align: center; /* Centrer le contenu */
+    }
+
+    .services-photography .text4{
+        padding: 0;
+    }
+
+    .arrow{
+        position: static; /* Annuler la position relative */
+        left: auto;
+        top: auto;
+        padding: 0; /* Réinitialiser le rembourrage */
+        text-align: center;
+    }
+
+    
+    .text1,
+    .text2 {
+        padding: 50px 20px; /* Ajuster l'espacement du texte */
+    }
+    
+    /* Projets */
+    .project-text {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        text-align: center; /* Centrer le texte */
+    }
+    
+    .project-text img {
+        width: 80px; /* Réduire la taille de l'image */
+        height: auto; /* Maintenir le ratio */
+    }
+    
+    /* Pied de page */
+    .footer-img img {
+        width: 50%; /* Réduire la taille des images */
+    }
+    
+    .footer-nav nav ul li {
+        padding: 10px 20px; /* Ajouter de l'espace autour des liens */
+    }
+    
+    .footer-icones {
+        padding: 20px 0; /* Ajouter de l'espace autour des icônes */
+    }
+    
+    .footer-icones svg {
+        width: 40px; /* Ajuster la taille des icônes */
+        height: auto; /* Maintenir le ratio */
+    }
+    
+    .gd-ph{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects {
+        /* Assurez-vous que la visibilité est définie sur visible */
+        padding-top: 100px; /* Ajustez le padding en fonction de vos besoins */
+        padding-bottom: 100px;
+    }
+
+    #projects h2{
+        padding: 0;
+        font-size: 3vh;
+    }
+    
+    #services .services-transform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .services-graphic .text3, .services-photography .text4 {
+        padding: 10px;
+    }
+
+    
+
+    #services .services-stand{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
